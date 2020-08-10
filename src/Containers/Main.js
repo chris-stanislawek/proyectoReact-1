@@ -8,7 +8,10 @@ import Footer from "../Components/Footer";
 import { Container } from "react-bootstrap";
 import useFetchJobs from "../Hooks/UseFetchJobs";
 
+
+
 const Main = () => {
+
   const [params, setParams] = useState({});
   const [page, setPage] = useState(1);
   const { jobs, loading, error } = useFetchJobs(params, page);
