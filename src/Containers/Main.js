@@ -1,68 +1,58 @@
-import React, {useState, useEffect} from 'react';
-import  '../assets/styles/Components/App.scss'
-import Header from '../Components/Header';
-import Coverpage from '../Components/Coverpage';
-import Search from '../Components/Search';
-import CardJob from '../Components/CardJob';
-import axios from 'axios';
-import Footer from '../Components/Footer';
-
-
-
+import React, { useState } from "react";
+import "../assets/styles/Components/App.scss";
+import Header from "../Components/Header";
+import Coverpage from "../Components/Coverpage";
+import Search from "../Components/Search";
+import CardJob from "../Components/CardJob";
+import Footer from "../Components/Footer";
+import { Container } from "react-bootstrap";
+import useFetchJobs from "../Hooks/UseFetchJobs";
 
 const Main = () => {
+  const [params, setParams] = useState({});
+  const [page, setPage] = useState(1);
+  const { jobs, loading, error } = useFetchJobs(params, page);
 
-    const [cards, setCards]= useState([])
+  function handleParamChange(e){
+    const param= e.target.name
+    const value= e.target.value
+    setPage(1)
+    setParams(prevParams =>{
+        return {...prevParams, [param]: value }
+    })
+  }
 
-    const getCard = ()=>{
+  return (
+    <div>
+      <Header />
+      <div>
+        <Coverpage />
+      </div>
+      <div>
+        <Search params= {params} onParamChange={handleParamChange} />
+        <Container className="my-4">
+            <h1 className="mb-4"> Trabajos Remotos: </h1>
+          {loading && <h1> Loading...</h1>}
+          {error && <h1>Error, try again</h1>}
+          {jobs.map(job =>{
+              return <CardJob
+                      key={job.id} 
+                      job= {job}
 
-
-        const URL = `https://jobs.github.com/positions.json?description=python&location=new+york`;
-        axios.get(URL)
-             .then( response => setCards(response.data.data.data))
-             .catch( error => console.log(error));
+                             />
+          })}
           
-    }        
+        </Container>
 
-    useEffect(()=>{
-       getCard();
-     }, []);
 
-    return (
-        <div>
-            <Header/>
-            <div> 
-            <Coverpage/>
-            </div>
-            <div>
-            <Search  getCard= {getCard}/>
 
-           
-            {cards.map(card => {
-                return (
-                    <CardJob 
-                    key= {card.id}
-                    type= {card.type}
-                    title = {card.title}
-                    url= {card.url}
-                    company = {card.company}
-                    location = {card.location}
-                    description = {card.description}
-                    company_logo = {card.company_logo}
-                    />
-                    
-                )
-            })} 
 
-            <Footer />
-            
-            </div>
-           
-        </div>
-
-       
         
-    )
-}
+
+        <Footer />
+      </div>
+    </div>
+  );
+};
 
 export default Main;
