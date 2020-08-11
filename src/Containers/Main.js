@@ -5,6 +5,7 @@ import Coverpage from "../Components/Coverpage";
 import Search from "../Components/Search";
 import CardJob from "../Components/CardJob";
 import Footer from "../Components/Footer";
+import Buttons from "../Components/Buttons";
 import { Container } from "react-bootstrap";
 import useFetchJobs from "../Hooks/UseFetchJobs";
 
@@ -27,10 +28,20 @@ const Main = () => {
 
   return (
     <div>
+      <div> 
       <Header />
+      </div>
+      
+
+
       <div>
         <Coverpage />
       </div>
+
+      <div>
+        <Buttons/>
+      </div>
+
       <div>
         <Search params= {params} onParamChange={handleParamChange} />
         <Container className="my-4">

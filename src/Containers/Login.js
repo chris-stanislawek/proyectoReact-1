@@ -6,12 +6,7 @@ import logoT from '../assets/styles/img/logo-T.png';
 
 
 
-
-
-
 const Login = () => {
-
-
 
 	function crearCuenta (email, password, nombres) {
 		firebase.auth().createUserWithEmailAndPassword(email, password)
