@@ -47,12 +47,12 @@ const Main = () => {
       <div>
         <Search params={params} onParamChange={handleParamChange} />
         <Container className="my-4">
-          <h1 className="mb-4"> Trabajos Remotos: </h1>
+         <h1 className="mb-4 ml-3" > Trabajos Remotos: </h1>
           {loading && <h1> Loading...</h1>}
           {error && <h1> Error, try again</h1>}
           {jobs.map((job) => {
             return <CardJob key={job.id} job={job} />;
-            console.log(job.job)
+            
           })}
         </Container>
 

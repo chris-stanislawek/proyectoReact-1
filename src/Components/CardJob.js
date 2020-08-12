@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Card, Badge, Button , Collapse } from 'react-bootstrap';
+import { Card, Badge, Button , Collapse, Container } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
+import '../assets/styles/Components/CardJobs.scss';
 
 
 
@@ -12,7 +13,8 @@ const CardJob = ({ job }) => {
 
   return (
     
-
+    <Container className="prueba"> 
+      
     <Card className="mb-3">
       <Card.Body>
         <div className='d-flex justify.content-between'> 
@@ -33,7 +35,7 @@ const CardJob = ({ job }) => {
         </div>
       <Card.Text>
         <Button onClick={()=> setOpen(prevOpen => !prevOpen )} 
-        variant="primary"> 
+        variant="warning" className="mt-3"> 
         { open? 'Ocultar detalles' : 'Ver  Detalles'} </Button>
       </Card.Text>
       <Collapse in={open}>
@@ -43,6 +45,7 @@ const CardJob = ({ job }) => {
       </Collapse>     
       </Card.Body>
     </Card>
+    </Container>
    
 
   )

@@ -31,8 +31,15 @@
     width: 90px;
     margin-left: -15px;
     font-weight: bold;
-    background-color: #e899dc;
-    background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
+    color:white;
+    
+    background: #9C27C1;
+    background-image: -webkit-linear-gradient(top, #9C27C1, #D757FF);
+    background-image: -moz-linear-gradient(top, #9C27C1, #D757FF);
+    background-image: -ms-linear-gradient(top, #9C27C1, #D757FF);
+    background-image: -o-linear-gradient(top, #9C27C1, #D757FF);
+    background-image: linear-gradient(to bottom, #9C27C1, #D757FF);
+    
     font-family: 'Montserrat', sans-serif;
        
 }
