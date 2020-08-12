@@ -10,7 +10,7 @@ const ACTIONS= {
 }
 
 
-const BASE_URL = 'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?lat=37.3229978&long=-122.0321823'
+const BASE_URL = 'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?location=remote'
 
 function reducer(state,action){
     switch(action.type){

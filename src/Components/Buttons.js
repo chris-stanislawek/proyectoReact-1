@@ -9,7 +9,13 @@ export const Buttons = ({ handleButton }) => {
 
             <div className="box_1"> 
             
-            <button className="box--button" onClick={handleButton}> Node Js </button>
+            {/* <Form.Check onChange={onParamChange} value={params.full_time} name="full_time"
+                    id="full_time" label="Full Time" type="checkbox"/>
+                    
+                    onClick={handleButton} value={params.node} name="node"
+                    */}
+
+            <button className="box--button" > Node Js </button>
             <button className="box--button"> Python </button>
             <button className="box--button"> Angular </button>
             <button className="box--button"> React Js </button>

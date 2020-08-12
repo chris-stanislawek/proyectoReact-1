@@ -9,6 +9,7 @@ const Search = ({params, onParamChange}) => {
                     <Form.Label> </Form.Label>
                     <Form.Control onChange={onParamChange} 
                     value= {params.description} name="description" type="text" width="small" />
+                   
                 </Form.Group>
 
                 {/* <Form.Group as={Col}>
