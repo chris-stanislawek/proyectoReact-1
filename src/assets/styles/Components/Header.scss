@@ -1,11 +1,11 @@
-.header{
+.header {
     width: 100%;
-    height: 78px;
+    // height: 78px;
     background-color: white;
     //opacity: 10;   
     //position:fixed;
     //z-index:1000;
-    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+    // box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,59 +15,79 @@
 
 
 
-.header .nav-left-section{  
-       margin-left: 70px;
-        
-        margin-bottom: 0;
-        
+.header .nav-left-section {
+    margin-left: 70px;
 }
 
-.header p{
+.logo {
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.header p {
     margin-bottom: 0;
 }
 
-.header .nav-right-section{
+.header .nav-right-section {
     list-style: none;
-     width:400px;
-     margin-right: 70px;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     align-items: center;
-     margin-bottom: 0;
-    
+    width: 500px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+
 
 }
 
-.header .nav-right-section a{
-    color: black;
+.header .nav-right-section a {
+    color: #363635;
     margin-right: 10px;
-     
+    text-decoration: none;
+    font-weight: 500;
+
 }
 
 
-.header .nav-right-section a:hover{
-    background-color: #cccccc;
+.header .nav-right-section a:hover {
+    color: #00f5be;
+    // font-weight: bold;
+    ;
 }
 
 
-.header .nav-right-section .nav-right-section__button{
+.header .nav-right-section .nav-right-section__button {
     border: none;
     font-size: 13px;
+    color: #ffffff;
     border-radius: 5px;
     height: 30px;
     width: 115px;
     margin-left: -15px;
     font-weight: bold;
-    background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA 51%, #1D2B64 100%);   
+    background: #9C27C1;
+    background-image: -webkit-linear-gradient(top, #9C27C1, #D757FF);
+    background-image: -moz-linear-gradient(top, #9C27C1, #D757FF);
+    background-image: -ms-linear-gradient(top, #9C27C1, #D757FF);
+    background-image: -o-linear-gradient(top, #9C27C1, #D757FF);
+    background-image: linear-gradient(to bottom, #9C27C1, #D757FF);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
 }
 
-.header .nav-right-section .nav-right-section__button:hover{
-    background-position: right center;
-    box-shadow:0px 4px 3px rgba(0,0,0,.5);
-    
+.header .nav-right-section .nav-right-section__button:hover {
+    background: #9C27C1;
+    border: solid #337FED 0px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
 }
-
-
-
-
