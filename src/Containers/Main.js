@@ -27,7 +27,8 @@ const Main = () => {
   }
 
   return (
-    <div>
+    <Container> 
+   
       <div> 
       <Header />
       </div>
@@ -65,7 +66,8 @@ const Main = () => {
 
         <Footer />
       </div>
-    </div>
+    
+    </Container>
   );
 };
 

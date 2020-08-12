@@ -1,0 +1,29 @@
+.box{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.box .box_1{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.box .box_2{
+display: flex;
+justify-content: center;
+//margin: 30px;
+}
+
+.box .box--button{
+    border: none;
+    font-size: 13px;
+    border-radius: 5px;
+    height: 30px;
+    width: 115px;
+    margin-left: -15px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA 51%, #1D2B64 100%);
+}
