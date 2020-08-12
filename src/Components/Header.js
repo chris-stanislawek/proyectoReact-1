@@ -11,15 +11,15 @@ const Header = () => {
 
       <ul className="nav-right-section">
         <li>
-          <a href="/login"> Home </a>
+          <a href="/"> Home </a>
         </li>
 
         <li>
-          <a href="/register"> FAQ </a>
+          <a href="/faq"> FAQ </a>
         </li>
 
         <li>
-          <a href="/register"> Blog </a>
+          <a href="/blog"> Blog </a>
         </li>
 
         <li>

@@ -5,7 +5,7 @@ import Login from '../Containers/Login';
 import Register from '../Containers/Register';
 import Blog from '../Containers/Blog';
 import PrivacyPolicy from '../Containers/PrivacyPolicy';
-import Frequentquestions from '../Containers/Frequentquestions';
+import Faq from '../Containers/Faq';
 import ContactUs from '../Containers/ContactUs';
 
 
@@ -16,7 +16,7 @@ const App = () => (
         <Route exact path="/register" component={Register}/>
         <Route exact path="/blog" component={Blog}/>
         <Route exact path="/politica" component ={PrivacyPolicy} />
-        <Route exact path="/preguntasfrecuentes" component ={Frequentquestions}/>
+        <Route exact path="/faq" component ={Faq}/>
         <Route exact path="/contactanos" component ={ContactUs}/>      
     </BrowserRouter>
 

@@ -1,12 +1,13 @@
 import React from 'react';
 
 
-const Frequentquestions = () => {
+const Faq = () => {
     return (
         <div>
             <h1> Preguntas frecuentes </h1>
+            <button className='button'> <a href="/"> Volver</a></button>
         </div>
     )
 }
 
-export default Frequentquestions
+export default Faq
