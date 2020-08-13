@@ -8,21 +8,16 @@ import { Container } from "react-bootstrap";
 const Postjob = () => {
   const history = useHistory();
 
-  const createJob = (
-    company_name,
-    description,
-    email,
-    job_title,
-    website_url
-  ) => {
+  const createJob = (company_name, description, email, title, website_url) => {
     const URL = "https://remoteunicorns.firebaseio.com/job.json";
 
     let newJob = {
-      company_name: company_name,
+      company: company_name,
       description: description,
       email: email,
-      job_title: job_title,
+      title: title,
       website_url: website_url,
+      created_at: new Date(),
     };
     axios
       .post(URL, newJob)

@@ -6,7 +6,7 @@ const CreateJob = (props) => {
   const [company_name, setCompany_name] = useState("");
   const [description, setDescription] = useState("");
   const [email, setEmail] = useState("");
-  const [job_title, setJob_title] = useState("");
+  const [title, setTitle] = useState("");
   const [website_url, setWebsite_url] = useState("");
 
   const handlerCompany_name = (evento) => {
@@ -22,8 +22,8 @@ const CreateJob = (props) => {
   const handlerEmail = (evento) => {
     setEmail(evento.target.value);
   };
-  const handlerJob_title = (evento) => {
-    setJob_title(evento.target.value);
+  const handlerTitle = (evento) => {
+    setTitle(evento.target.value);
   };
   const handlerWebsite_url = (evento) => {
     setWebsite_url(evento.target.value);
@@ -51,12 +51,12 @@ const CreateJob = (props) => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="job_title">Please provide the job title</label>
+          <label htmlFor="title">Please provide the job title</label>
           <input
-            onChange={handlerJob_title}
+            onChange={handlerTitle}
             type="text"
             className="form-control"
-            id="job_title"
+            id="title"
           />
         </div>
         <div className="form-group">
@@ -79,7 +79,7 @@ const CreateJob = (props) => {
         </div>
         <button
           onClick={() => {
-            createJob(company_name, description, email, job_title, website_url);
+            createJob(company_name, description, email, title, website_url);
           }}
           className="btn btn-primary"
         >
