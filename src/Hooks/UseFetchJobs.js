@@ -1,5 +1,5 @@
 
-import { useReducer, useEffect } from 'react';
+import { useReducer, useEffect, useState } from 'react';
 import axios from 'axios';
 
 
@@ -27,6 +27,24 @@ function reducer(state,action){
 
 export default function useFetchJobs(params, page){
     const [state, dispatch] = useReducer(reducer,{jobs:[], loading: true})
+
+    
+
+    function getJob (tecnology) {
+
+         tecnology = 'react'
+         const URL = `https://jobs.github.com/positions.json?location=remote&description=${tecnology}`
+
+         axios.get(URL)
+            .then( response => console.log(response.data))
+            .catch(error => console.log(error))
+    }
+
+   
+
+    
+
+
 
    useEffect(() => {
        const cancelToken = axios.CancelToken.source()
