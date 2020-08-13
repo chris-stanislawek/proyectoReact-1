@@ -14,11 +14,8 @@ const Main = () => {
   const [page, setPage] = useState(1);
   const { jobs, loading, error } = useFetchJobs(params, page);
 
-
-  function handleButton(){
-    console.log('si funciono')
-   
-
+  function handleButton() {
+    console.log("si funciono");
   }
 
   function handleParamChange(e) {
@@ -31,7 +28,7 @@ const Main = () => {
   }
 
   return (
-    <Container>
+    <Container fluid={true}>
       <div>
         <Header />
       </div>
@@ -39,25 +36,24 @@ const Main = () => {
       <div>
         <Coverpage />
       </div>
+      <Container>
+        <div>
+          <Buttons handleButton={handleButton} />
+        </div>
 
-      <div>
-        <Buttons handleButton={handleButton} />
-      </div>
-
-      <div>
-        <Search params={params} onParamChange={handleParamChange} />
-        <Container className="my-4">
-         <h1 className="mb-4 ml-3" > Trabajos Remotos: </h1>
-          {loading && <h1> Loading...</h1>}
-          {error && <h1> Error, try again</h1>}
-          {jobs.map((job) => {
-            return <CardJob key={job.id} job={job} />;
-            
-          })}
-        </Container>
-
-        <Footer />
-      </div>
+        <div>
+          <Search params={params} onParamChange={handleParamChange} />
+          <Container className="my-4">
+            <h1 className="mb-4 ml-3"> Trabajos Remotos: </h1>
+            {loading && <h1> Loading...</h1>}
+            {error && <h1> Error, try again</h1>}
+            {jobs.map((job) => {
+              return <CardJob key={job.id} job={job} />;
+            })}
+          </Container>
+        </div>
+      </Container>
+      <Footer />
     </Container>
   );
 };

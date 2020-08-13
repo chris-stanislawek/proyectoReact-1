@@ -23,7 +23,9 @@ const Header = () => {
         </li>
 
         <li>
-          <button className="nav-right-section__button"> POST A JOB </button>
+          <button className="nav-right-section__button">
+            <a href="/postjob">POST A JOB</a>
+          </button>
         </li>
       </ul>
     </header>
