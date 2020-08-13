@@ -51,21 +51,20 @@
 }
 
 
-.header .nav-right-section a:hover {
+.nav-right-section li a:hover {
     color: #00f5be;
     // font-weight: bold;
     ;
 }
 
 
-.header .nav-right-section .nav-right-section__button {
+.header .nav-right-section .nav-right-section__button a {
     border: none;
     font-size: 13px;
     color: #ffffff;
-    border-radius: 5px;
     height: 30px;
     width: 115px;
-    margin-left: -15px;
+    // margin-left: -15px;
     font-weight: bold;
     background: #9C27C1;
     background-image: -webkit-linear-gradient(top, #9C27C1, #D757FF);
@@ -89,10 +88,10 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
     text-decoration: none;
-    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+    // box-shadow:0px 4px 3px rgba(0,0,0,.5);
 
 }
 
-.nav-right-section__button:focus{
+.nav-right-section__button:focus {
     outline: none;
 }

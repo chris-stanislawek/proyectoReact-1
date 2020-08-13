@@ -8,7 +8,7 @@ const Coverpage = () => {
     <Container>
       <div className="cover">
         <div className="text">
-          <p className="mainText">FIND REMOTE</p>
+          <p className="mainText">FIND A REMOTE</p>
           <p className="mainText">DEV JOB IN TOP</p>
           <p className="mainText">TECH STARTUPS</p>
           <p>
