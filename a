@@ -1,0 +1,102 @@
+[33mcommit 30be171bcb4871f29ca1fb3b074d43a23783c16d[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 4b55845 c186971
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Fri Aug 14 00:56:41 2020 +0200
+
+    solucion rama
+
+[33mcommit 4b5584516545d61312fdb56b8609a1faf9cf09ae[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Fri Aug 14 00:51:42 2020 +0200
+
+    arreglo en cards
+
+[33mcommit c186971c8593422e2082d7b3f357324d877e2e9c[m[33m ([m[1;32mnewobject[m[33m)[m
+Author: Chris <christophe.stanislawek@gmail.com>
+Date:   Thu Aug 13 23:38:28 2020 +0200
+
+    small CSS changes in cover and header
+
+[33mcommit 159f9fdde060696a1eafa2d54f9c96d4e0adf01e[m[33m ([m[1;32mpost[m[33m)[m
+Author: Chris <christophe.stanislawek@gmail.com>
+Date:   Thu Aug 13 04:24:07 2020 +0200
+
+    created the postNew job section, integration with firebase and changes main styles
+
+[33mcommit 5a23377932492a2bedcc09a7bba5d882ecde069a[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Wed Aug 12 13:36:45 2020 +0200
+
+    mejoras en api
+
+[33mcommit 537ffcc586b54dbb3a7d395aac7778a9795cf6ea[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Wed Aug 12 05:06:59 2020 +0200
+
+    ultimo de hoy, lo juro
+
+[33mcommit 5d5e2e457d0db072b88e794388fbf0275bc90a0a[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Wed Aug 12 04:59:19 2020 +0200
+
+    arreglo en rutas
+
+[33mcommit 77ea67ad573374f30927c7a9b4038e837d82d1bf[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Wed Aug 12 04:44:29 2020 +0200
+
+    otros cambios, no me hago responsable tengo sueño :P
+
+[33mcommit 11aaef73029d06f111d51ce2c0497f894e4c03de[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Wed Aug 12 03:59:47 2020 +0200
+
+    mejoras
+
+[33mcommit 6ba1124bc967193db29722deb635fd4763e6f1a3[m[33m ([m[1;32mheader[m[33m)[m
+Author: Chris <christophe.stanislawek@gmail.com>
+Date:   Wed Aug 12 03:52:09 2020 +0200
+
+    changed navigation, changed cover worked only on CSS
+
+[33mcommit 328110b57a7f560daf63ac7bd99eb980cdc47c03[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Wed Aug 12 02:23:16 2020 +0200
+
+    cambios diseño2
+
+[33mcommit 7958f6f7fd392798657b55fee116d02ce9f0184a[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Wed Aug 12 01:41:51 2020 +0200
+
+    cambios diseño
+
+[33mcommit 8298aec96f39ed643f3a3895ea887b57510bc307[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Tue Aug 11 01:39:23 2020 +0200
+
+    mejoras
+
+[33mcommit 5bd25ac568b6e829bc041668f83465879b9a8293[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Mon Aug 10 18:26:29 2020 +0200
+
+    cambios en la API
+
+[33mcommit c092f79db145af935da9078ba37680c785a7697e[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Mon Aug 10 15:48:45 2020 +0200
+
+    prueba api
+
+[33mcommit 45dda5a9995113181740e9d54f49d64aca54587d[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Mon Aug 10 04:21:27 2020 +0200
+
+    version 0.1
+
+[33mcommit 388e3bf946a7fa8567409ffeb6206ba9297d4e17[m
+Author: Karla Mora <karlamorasg@gmail.com>
+Date:   Mon Aug 10 03:43:11 2020 +0200
+
+    Initialize project using Create React App

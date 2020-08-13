@@ -28,7 +28,8 @@ const CardJob = ({ job }) => {
             <Badge variant="secondary" className="mr-2">{job.type} </Badge>
             <Badge variant="secondary">{job.location}</Badge>
             <div style= {{ wordBreak: 'break-all'}}>
-              <ReactMarkdown source={job.how_to_aply} />
+              <p className="mb-2"> How apply: </p>
+              <ReactMarkdown source={job.how_to_apply} />
             </div>
           </div>      
           <img  className="d-none d-md-block" height="50" alt={job.company} src={job.company_logo} />

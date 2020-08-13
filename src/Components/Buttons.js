@@ -1,8 +1,9 @@
 import React from 'react'
 import '../assets/styles/Components/Buttons.scss';
+import useFetchJobs from '../Hooks/UseFetchJobs';
 
 
-export const Buttons = ({ handleButton }) => {
+export const Buttons = ({ job }) => {
     return (
 
            <div className="box">
