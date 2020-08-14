@@ -52,12 +52,10 @@ const Main = () => {
         <Coverpage />
       </div>
       <Container>
-        <div>
-          <Buttons handleButton={handleButton} />
-        </div>
+       <div>{/* <Buttons handleButton={handleButton} /> */}</div>
 
         <div>
-          <Search params={params} onParamChange={handleParamChange} />
+          {/* <Search params={params} onParamChange={handleParamChange} /> */}
           <Container className="my-4">
             <h1 className="mb-4 ml-3"> Trabajos Remotos: </h1>
             {Object.keys(FbJobs).map((fireb, i) => {
