@@ -8,6 +8,7 @@ const CreateJob = (props) => {
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
   const [website_url, setWebsite_url] = useState("");
+  const [company_logo_URL, setCompany_logo_url] = useState("");
 
   const handlerCompany_name = (evento) => {
     console.log(evento.target.value);
@@ -28,6 +29,9 @@ const CreateJob = (props) => {
   const handlerWebsite_url = (evento) => {
     setWebsite_url(evento.target.value);
   };
+  const handlerCompany_logo_Url = (evento) => {
+    setCompany_logo_url(evento.target.value);
+  };
 
   return (
     <div className="card">
@@ -39,6 +43,28 @@ const CreateJob = (props) => {
             type="text"
             className="form-control"
             id="company_name"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="website_url">
+            Please provide your company website
+          </label>
+          <input
+            onChange={handlerWebsite_url}
+            type="text"
+            className="form-control"
+            id="website_url"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="company_logo_URL">
+            Please provide a link to your company logo
+          </label>
+          <input
+            onChange={handlerCompany_logo_Url}
+            type="text"
+            className="form-control"
+            id="company_logo_URL"
           />
         </div>
         <div className="form-group">
@@ -60,30 +86,29 @@ const CreateJob = (props) => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="description">Please provide a job description</label>
-          <input
+          <label for="description">Please provide a job description</label>
+          <textarea
             onChange={handlerDescription}
             type="text"
             className="form-control"
             id="description"
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="website_url">Please provide a job description</label>
-          <input
-            onChange={handlerWebsite_url}
-            type="text"
-            className="form-control"
-            id="website_url"
-          />
-        </div>
+
         <button
           onClick={() => {
-            createJob(company_name, description, email, title, website_url);
+            createJob(
+              company_name,
+              description,
+              email,
+              title,
+              website_url,
+              company_logo_URL
+            );
           }}
           className="btn btn-primary"
         >
-          Agregar
+          Add job
         </button>
       </div>
     </div>

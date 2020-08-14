@@ -61,11 +61,11 @@ const Main = () => {
           <Container className="my-4">
             <h1 className="mb-4 ml-3"> Trabajos Remotos: </h1>
             {Object.keys(FbJobs).map((fireb, i) => {
-              console.log(fireb[i]);
               return <CardJob key={i} job={FbJobs[fireb]} />;
             })}
             {loading && <h1> Loading...</h1>}
             {error && <h1> Error, try again</h1>}
+            {/* {console.log("Jobs:", jobs)} */}
             {jobs.map((job) => {
               return <CardJob key={job.id} job={job} />;
             })}
