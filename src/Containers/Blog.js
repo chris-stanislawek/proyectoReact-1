@@ -4,7 +4,10 @@ import '../assets/styles/Components/Blog.scss';
 const Blog = () => {
     return (
         <div>
-            <h1> Aca va el blog </h1>
+    
+            <h2>Header </h2>
+            <h3> Cards 4 </h3>
+            <h4>Footer </h4>
         </div>
     )
 }
