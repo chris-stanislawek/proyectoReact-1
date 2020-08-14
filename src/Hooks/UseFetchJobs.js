@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-import { useReducer, useEffect } from "react";
+import { useReducer, useEffect, useState } from "react";
 import axios from "axios";
 
 const ACTIONS = {
@@ -27,21 +26,20 @@ function reducer(state, action) {
     default:
       return state;
   }
-=======
-
-import { useReducer, useEffect, useState } from 'react';
-import axios from 'axios';
-
-
-const ACTIONS= {
-    MAKE_REQUEST: 'make-requests',
-    GET_DATA: 'get-data',
-    ERROR: 'error'
->>>>>>> 30be171bcb4871f29ca1fb3b074d43a23783c16d
 }
 
 export default function useFetchJobs(params, page) {
   const [state, dispatch] = useReducer(reducer, { jobs: [], loading: true });
+
+  function getJob(tecnology) {
+    tecnology = "react";
+    const URL = `https://jobs.github.com/positions.json?location=remote&description=${tecnology}`;
+
+    axios
+      .get(URL)
+      .then((response) => console.log(response.data))
+      .catch((error) => console.log(error));
+  }
 
   useEffect(() => {
     const cancelToken = axios.CancelToken.source();
@@ -66,52 +64,3 @@ export default function useFetchJobs(params, page) {
 
   return state;
 }
-<<<<<<< HEAD
-=======
-
-export default function useFetchJobs(params, page){
-    const [state, dispatch] = useReducer(reducer,{jobs:[], loading: true})
-
-    
-
-    function getJob (tecnology) {
-
-         tecnology = 'react'
-         const URL = `https://jobs.github.com/positions.json?location=remote&description=${tecnology}`
-
-         axios.get(URL)
-            .then( response => console.log(response.data))
-            .catch(error => console.log(error))
-    }
-
-   
-
-    
-
-
-
-   useEffect(() => {
-       const cancelToken = axios.CancelToken.source()
-       dispatch({type: ACTIONS.MAKE_REQUEST })
-       axios.get(BASE_URL,{
-           cancelToken: cancelToken.token,
-           params: {markdow: true, page: page , ...params}
-       })
-       .then(res => {
-           dispatch({type: ACTIONS.GET_DATA, payload: {jobs:res.data}})
-       })
-       .catch(e =>{
-           if(axios.isCancel(e)) return
-        dispatch({type: ACTIONS.ERROR, payload: {error:e}})
-       })
-    
-       return()=>{
-           cancelToken.cancel()
-       }
-   }, [params,page]);
-
-    return state
-    
-
-}
->>>>>>> 30be171bcb4871f29ca1fb3b074d43a23783c16d
