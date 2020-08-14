@@ -6,24 +6,28 @@ const Header = () => {
   return (
     <header className="header">
       <div className="nav-left-section">
-        <img className="logo" src={logo} />
+        <a href="/">
+          <img className="logo" src={logo} />
+        </a>
       </div>
 
       <ul className="nav-right-section">
         <li>
-          <a href="/login"> Home </a>
+          <a href="/"> Home </a>
         </li>
 
         <li>
-          <a href="/register"> FAQ </a>
+          <a href="/faq"> FAQ </a>
         </li>
 
         <li>
-          <a href="/register"> Blog </a>
+          <a href="/blog"> Blog </a>
         </li>
 
         <li>
-          <button className="nav-right-section__button"> POST A JOB </button>
+          <button className="nav-right-section__button">
+            <a href="/postjob">POST A JOB</a>
+          </button>
         </li>
       </ul>
     </header>
