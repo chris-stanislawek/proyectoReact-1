@@ -26,9 +26,11 @@ function reducer(state, action) {
 }
 export default function useFetchJobs(params, page) {
   const [state, dispatch] = useReducer(reducer, { jobs: [], loading: true });
+
   function getJob(tecnology) {
     tecnology = "react";
     const URL = `https://jobs.github.com/positions.json?location=remote&description=${tecnology}`;
+
     axios
       .get(URL)
       .then((response) => console.log(response.data))
